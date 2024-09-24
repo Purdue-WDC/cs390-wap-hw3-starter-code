@@ -1,9 +1,9 @@
 # HW3: Using Our JS Framework
 
 ## Objective
-In order to better understand how developers can take advantage of the functionality JavaScript frameworks provide, in this assignment, you will be recreating HW2 using our JavaScript framework from lecture.
+In order to better understand how developers take advantage of the functionality JavaScript frameworks provide, in this assignment, you will be recreating HW2 using our JavaScript framework from lecture.
 
-Note: You do not need to choose the same game as you made in HW2. Feel free to choose any from the list provided in HW2. Just make sure all functionality is present.
+Note: You do not need to choose the same game you made for HW2. Feel free to choose any game from the list provided in HW2. Just make sure all required functionality is present.
 
 ## Requirements
 
@@ -18,8 +18,8 @@ Note: You do not need to choose the same game as you made in HW2. Feel free to c
 - States:
     - Use at least 2 states to hold all non-constant data in your application. This might include player's turn, the board state, score, etc. All states should be made using the createState function. (2 points)
     - Call setValue on each state to update their values when appropriate. (1 point)
-- Effects: Use at least 1 effect that does anything you like. This might include logging states or derived values when they update. (1 points)
-- Derived Value: Use at least 1 derived value that does anything you like. (1 point)
+- Effects: Use at least 1 effect that does anything you like. This might include logging states or derived values when they update. All effects should be made using the createEffect function. (1 points)
+- Derived Value: Use at least 1 derived value that does anything you like. All dervied values should be made using the createDerived function (1 point)
 - DOM Updates: Use at least 2 states or derived values as a prop values for elements in your components' render functions. (1 points)
 
 ### Code Readability (2 points)
