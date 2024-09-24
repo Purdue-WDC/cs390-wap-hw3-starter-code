@@ -1,4 +1,4 @@
-# HW3: Using Our JS Framework
+# HW3: Using JS Frameworks
 
 ## Objective
 In order to better understand how developers take advantage of the functionality JavaScript frameworks provide, in this assignment, you will be recreating HW2 using our JavaScript framework from lecture.
