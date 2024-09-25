@@ -68,8 +68,8 @@ export class Component {
         return newState;
     }
 
-    createEffect(effectFn) {
-        const newEffect = new Effect(effectFn);
+    createEffect(effectFn, dependencies) {
+        const newEffect = new Effect(effectFn, dependencies);
         this.effects.push(newEffect);
     }
 
@@ -126,6 +126,8 @@ export class Component {
         for (const key in props) {
             const val = props[key];
             if (val instanceof State || val instanceof DerivedValue) {
+                el[key] = val.value;
+
                 this.createEffect(() => {
                     el[key] = val.value;
                 }, [val]);
