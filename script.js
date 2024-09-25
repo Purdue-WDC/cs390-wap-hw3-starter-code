@@ -6,7 +6,9 @@ class Root extends Component {
     }
 
     render() {
-        return this.element("div", {}, []);
+        return this.element("div", {
+            textContent: "root component"
+        }, []);
     }
 }
 
