@@ -1,10 +1,13 @@
 import { Component } from './framework.js';
 
+// CREATE YOUR NEW COMPONENTS HERE.
+
 class Root extends Component {
     constructor() {
         super();
     }
 
+    // Make sure to edit this so it renders your components.
     render() {
         return this.element("div", {
             textContent: "root component"
