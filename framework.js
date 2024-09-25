@@ -102,12 +102,12 @@ export class Component {
         // clean up cyclic references in reactive objects.
         this.effects.forEach(effect => {
             effect.dependencies.forEach(dep => {
-                dep.reactions.remove(effect);
+                dep.reactions.delete(effect);
             });
         });
         this.derivedValues.forEach(derivedValue => {
             derivedValue.dependencies.forEach(dep => {
-                dep.reactions.remove(derivedValue);
+                dep.reactions.delete(derivedValue);
             });
         });
 
